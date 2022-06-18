@@ -1,0 +1,255 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    display: none;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 10px;
+    display: none;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333; 
+    display: block;
+  }
+
+
+.sideMenu{
+    position: fixed;
+    background: #000;
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    transition: width .2s ease-in;
+}
+
+.sideMenu.inactive{
+    width: 80px;
+}
+
+.sideMenu .topSection{
+    position: relative;
+}
+
+.sideMenu .topSection .logo{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: inline-block;
+}
+.sideMenu .topSection .logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sideMenu .topSection .toggleMenuBtn{
+    color: #666;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.sideMenu.inactive .topSection .toggleMenuBtn{
+    right: -50px;
+}
+
+.sideMenu .searchController{
+    color: #fff;
+    position: relative;
+}
+
+.sideMenu .searchController .search-btn{
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #666;
+}
+
+.sideMenu .searchController input[type=text]{
+    border: 0;
+    outline: none;
+    height: 35px;
+    background: #333;
+    border-radius: 5px;
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 40px;
+    color: #666;
+}
+
+.sideMenu .mainMenu .menuItem{
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sideMenu .mainMenu .menuItem .active{
+    background: #333;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+.sideMenu .mainMenu{
+    margin: 5px 0;
+    position: relative;
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* not required any more */
+.sideMenu.inactive .mainMenu{
+   
+}
+
+.sideMenu .mainMenu .menuItem .menuIcon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.sideMenu .mainMenu .menuItem span{
+    position: absolute;
+    display: inline-block;
+    line-height: 40px;
+    opacity: 1;
+    transition: opacity .2s ease-in;
+}
+
+.sideMenu .inactive .mainMenu .menuItem span{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.sideMenu .mainMenu .subMenu{
+    color: #333;
+    margin-left: 20px;
+    border-left: 1px solid #666;
+    box-sizing: border-box;
+    padding-left: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-in;
+}
+
+
+
+.sideMenu .mainMenu .subMenu.active{
+    max-height: 200px;
+}
+
+.sideMenu .mainMenu .subMenu a{
+    display: block;
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+
+.sideMenu .mainMenu .subMenu a.active{
+    /* change in background, not recorded in video */
+    background: #222;
+    display: block;
+    
+    border-radius: 5px;
+    color: #fff;
+
+}
+
+.sideMenuFooter{
+    width: 100%;
+    background: #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sideMenuFooter .avatar{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+}
+.sideMenuFooter .avatar img{
+    max-width: 100%;
+}
+
+.sideMenuFooter .userInfo{
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    position: absolute;
+    opacity: 1;
+    transition: opacity .2s ease-in;
+}
+
+.sideMenu .inactive .sideMenuFooter .userInfo{
+    opacity: 1;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+
+.sideMenuFooter .userInfo h5{
+    font-size: 15px;
+}
+
+
+.sideMenuFooter .userInfo p{
+    font-size: 14px;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    background: #333;
+}
+
+.container{
+    margin-left: 300px;
+    transition: margin-left .2s ease-in;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.container .inactive{
+    margin-left: 80px;
+}

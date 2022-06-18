@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@import "~bootstrap/scss/functions";
+
+@import "variables";
+
+@import "~bootstrap/scss/bootstrap";
+
+.gradient-custom1 {
+  /* fallback for old browsers */
+  background: #30cfd0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(48, 207, 208, 0.5),
+    rgba(51, 8, 103, 0.5)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(48, 207, 208, 0.5),
+    rgba(51, 8, 103, 0.5)
+  );
+}
+
+.gradient-custom2 {
+  /* fallback for old browsers */
+  background: #c471f5;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(196, 113, 245, 0.5),
+    rgba(250, 113, 205, 0.5)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(196, 113, 245, 0.5),
+    rgba(250, 113, 205, 0.5)
+  );
+}
+
+.gradient-custom3 {
+  /* fallback for old browsers */
+  background: #f6d365;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(246, 211, 101, 0.5),
+    rgba(253, 160, 133, 0.5)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(246, 211, 101, 0.5),
+    rgba(253, 160, 133, 0.5)
+  );
+}
+
+.gradientImg1 {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #00324d,
+    #004c5f,
+    #27666b,
+    #4d8076
+  );
+}
+
+.gradientImg2 {
+  background-image: linear-gradient(
+    to top,
+    #432371,
+    #424495,
+    #3964b8,
+    #2885d7,
+    #09a6f3
+  );
+}
+
+.gradientImg3 {
+  background-image: linear-gradient(
+    to top,
+    #03071e,
+    #0b253c,
+    #08415b,
+    #006078,
+    #028090
+  );
+}
+
+.textShadow {
+  letter-spacing: 0.1em;
+  text-shadow: -1px -1px 1px #fff, 2px 2px 1px #363636;
+}
+
+
+.textShadow:hover {
+  color: #e0dfdc;
+  background-color: #333;
+  letter-spacing: 0.1em;
+  box-shadow: 3px 1px 7px black;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
+    0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+.rounded--1{
+    border-radius: 1rem;
+}
