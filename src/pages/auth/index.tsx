@@ -26,6 +26,11 @@ export default function Index() {
                                 <h4>Layout 3</h4>
                             </div>
                         </Link>
+                        <Link to={paths.layout4} className="nav-link col-md-3 ">
+                            <div className="card border-0 p-5 rounded--1 gradientImg2 text-white text-center textShadow">
+                                <h4>Layout 4</h4>
+                            </div>
+                        </Link>
                     </div>
                 </Box>
             </Container >

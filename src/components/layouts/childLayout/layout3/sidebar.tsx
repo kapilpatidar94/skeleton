@@ -3,7 +3,7 @@ import style from "./style.module.scss";
 import logoLight from '../../../../assets/images/skeleton/3461881-84.png';
 import logoDark from '../../../../assets/images/skeleton/3461846-84.png';
 import { layout3 } from '../../../../configs/sideMenu';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 
 
 export default function Sidebar() {
@@ -75,14 +75,11 @@ export default function Sidebar() {
                             <span className={style.switch}></span>
                         </div>
                     </li>
-
                 </div>
             </div>
-
         </nav>
-
         <section className={style.home}>
-            <div className={style.text}>Dashboard Sidebar</div>
+            <Outlet />
         </section>
     </div>);
 }

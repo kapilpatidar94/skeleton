@@ -4,6 +4,7 @@ export const paths = {
     home            : base + 'home',
     layout1         : base + 'layout1',
     layout2         : base + 'layout2',
+    layout4         : base + 'layout4',
     auth            : {
         home        : base,
     },
