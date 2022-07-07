@@ -7,7 +7,7 @@ export default function Index() {
     return (
         <React.Fragment>
             <CssBaseline />
-            <Container maxWidth="lg" disableGutters>
+            <Container maxWidth="xl" disableGutters>
                 <Box className="bg-light" sx={{ height: '100vh' }} >
                     <h5 className="text-center">Select one item...</h5>
                     <div className="row justify-content-center gap-2">
@@ -16,19 +16,9 @@ export default function Index() {
                                 <h4>Layout 1</h4>
                             </div>
                         </Link>
-                        <Link to={paths.layout2} className="nav-link col-md-3">
-                            <div className="card border-0 p-5 rounded--1 gradientImg2 text-white text-center textShadow">
-                                <h4>Layout 2</h4>
-                            </div>
-                        </Link>
                         <Link to={paths.layout3.home} className="nav-link col-md-3 ">
                             <div className="card border-0 p-5 rounded--1 gradientImg2 text-white text-center textShadow">
                                 <h4>Layout 3</h4>
-                            </div>
-                        </Link>
-                        <Link to={paths.layout4} className="nav-link col-md-3 ">
-                            <div className="card border-0 p-5 rounded--1 gradientImg2 text-white text-center textShadow">
-                                <h4>Layout 4</h4>
                             </div>
                         </Link>
                     </div>

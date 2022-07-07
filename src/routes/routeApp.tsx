@@ -5,7 +5,6 @@ import { paths } from '../configs/constants';
 import AuthLayout from '../components/layouts/authLayout';
 import MainLayout from '../components/layouts/mainLayout';
 import Layout1 from '../components/layouts/childLayout/layout1';
-import Layout2 from '../components/layouts/childLayout/layout2';
 import Layout3 from '../components/layouts/childLayout/layout3';
 
 
@@ -13,8 +12,6 @@ import Layout3 from '../components/layouts/childLayout/layout3';
 
 const Home = lazy(() => import('../pages/home'));
 const Layout1Page = lazy(() => import('../pages/layout1Pages'));
-const Layout2Page = lazy(() => import('../pages/layout2Pages'));
-const Layout4Page = lazy(() => import('../pages/layout4Pages'));
 const Layout3Page = lazy(() => import('../pages/layout3Pages'));
 const Dashboard   = lazy(() => import('../pages/layout3Pages/dashboard'));
 const Analytics   = lazy(() => import('../pages/layout3Pages/analytics'));
@@ -36,14 +33,6 @@ function RouteApp() {
             {/* Layout 1 Pages */}
             <Route path={paths.layout1} element={<Layout1 />}>
                 <Route index element={<Suspense fallback={""}><Layout1Page /></Suspense>} />
-            </Route>
-            {/* Layout 2 Pages */}
-            <Route path={paths.layout2} element={<Layout2 />}>
-                <Route index element={<Suspense fallback={""}><Layout2Page /></Suspense>} />
-            </Route>
-            {/* Layout 4 Pages */}
-            <Route path={paths.layout4} element={<Layout2 />}>
-                <Route index element={<Suspense fallback={""}><Layout4Page /></Suspense>} />
             </Route>
             {/* Layout 3 Pages */}
             <Route path={paths.layout3.home} element={<Layout3 />}>
